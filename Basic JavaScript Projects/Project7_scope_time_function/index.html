@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <h4>Greeting Function</h4>
+    <p id="morning" onclick="myFunction()">Click!</p>
+
+    <h4>My mouseover Greeting Function</h4>
+    <p id="greet" onmouseover="greeting()">Hello!</p>
+
+<!-- my function for this didn't work with '(boogeymen < 0)' -->
+    <h4>Else Assignment</h4>
+    <p>How many boogeymen are under your bed?</p>
+    <input id="boogeymen" value="" placeholder="Enter number here">
+    <p id="boogeyUnderBed"></p>
+    <button onclick="boogeyNum()">Submit</button>
+
+    <h4>Else/If Assignment</h4>
+    <p id="Time_of_day"></p>
+    <button onclick="Time_function()">Click here for the time of day!</button>
+</body>
+</html>
