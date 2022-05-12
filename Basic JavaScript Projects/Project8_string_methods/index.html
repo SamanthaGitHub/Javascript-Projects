@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <script src="JS/main.js"></script>
+    <style>
+        body {
+            color: rgb(231, 166, 240);
+            background-color: rgb(16, 78, 58);
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>String Methods</h2>
+    <h4>slice(<em>20, 25</em>)</h4>
+    <p>sentence = "My favorite food is pasta"</p>
+    <p id="pasta"></p>
+    <button onclick="sliceMethod()">Click here!</button>
+
+    <h4>concat()</h4>
+    <p id="goblin"></p>
+    <button onclick="concatFunction()">Click me!</button>
+
+    <h4>toUpperCase()</h4>
+    <p id="upper" onclick="upperCase()">click and this will be uppercase</p>
+
+    <h4>search()</h4>
+    <p id="search" ondblclick="searchFunction()">Double click here! My text = 'I will search for the word search.'</p>
+
+    <h4>valueOf()</h4>
+    <p id="string" onclick="valueOfFunction()">Click to get the value of: 'This is a string'</p>
+
+    <br><br>
+    <h2>Number Methods</h2>
+    <h4>toString()</h4>
+    <p id="numString"></p>
+    <button onmouseover="numStringFunction()">Hover over this button!</button>
+
+    <h4>toPrecision()</h4>
+    <p id="pi5"></p>
+    <button onclick="piFiveFunction()">Click here for the first 5 numbers in pi (rounded)</button>
+
+    <h4>toFixed()</h4>
+    <p id="fixed" onclick="fixedFunction()">Click to see the first 5 decimal place values of pig.</p>
+
+</body>
+</html>
