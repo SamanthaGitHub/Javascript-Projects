@@ -1,13 +1,13 @@
-var x = 1;
+var x = 1; //global variable
 function add() {
     var y = 5
     document.write(x + 1 + "<br");
-    console.log(1 + y);
+    console.log(1 + y); //shows in the console of the browswe
 }
 
 function sub() {
-    document.write(y + 1)
-    console.log(1 + y);
+    document.write(y + 1) //y is a local variable, so this will produce an error
+    console.log(1 + y); //lets you see there's an error in the console
 }
 
 add();
@@ -22,7 +22,7 @@ function myFunction() {
     }
 }
 
-function greeting() {
+function greeting() { //this is kind the same as above, with evening and mouseover effect
     if (new Date().getHours() < 12) {
         document.getElementById("greet").innerHTML = "Good Morning!";
     }
@@ -34,40 +34,22 @@ function greeting() {
     }
 }
 
-//String doesn't work...
 
-// function capitalFunction() {
-//     capital = document.getElementById("capital").value;
-//     if (capital = "Salem") {
-//         guess = "You're right!";
-//     }
-//     else {
-//         guess= "Sorry, you're wrong.";
-//     }
-//     document.getElementById("oregonCapital").innerHTML = guess;
-// }
-
-
-
-
-//issue with Else Assignment in step 149
-function boogeyNum() {
+function boogeyNum() { //checks what to do if there's a boogeyman/men under your bed
     boogeymen = document.getElementById("boogeymen").value;
-    if (boogeymen <= 0) { //this didn't work with (=); why do I need (<=)?
-        answer = "You're all good!";
+    if (boogeymen > 0) {
+        answer = "Sorry, you need to call someone about that.";
     }
     else {
-        answer = "Sorry, you need to call someone about that.";
+        answer = "You're all good!";
     }
     document.getElementById("boogeyUnderBed").innerHTML = answer;
 }
 
 
-
-
 function Time_function() {
-    var Time = new Date().getHours();
-    var Reply;
+    var Time = new Date().getHours(); //gets the time of day
+    var Reply; //initiates the reply variable
     if (Time < 12 == Time > 0) {
         Reply = "It is morning time!";
     }
@@ -77,5 +59,5 @@ function Time_function() {
     else {
         Reply = "It is evening.";
     }
-    document.getElementById("Time_of_day").innerHTML = Reply;
+    document.getElementById("Time_of_day").innerHTML = Reply; //displays reply
 }
