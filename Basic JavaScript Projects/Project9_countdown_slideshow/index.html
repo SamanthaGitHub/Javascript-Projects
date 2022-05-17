@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<body>
+    <h1 style="text-align:center">Countdown to Oregon!</h1>
+    <p>How many seconds would you like to set the timer for?</p>
+    <input id="seconds" value ="">
+    <button onclick="countdown()">Click here!</button>
+    <p id="timer"></p>
+
+    <div class="slideshow-container">
+
+        <!-- SLIDES -->
+        <div class="mySlides fade">
+            <div class="number">1/3</div>
+            <img src="images/img1.jpg" style="width: 100%" alt="">
+            <div class="caption">Heceta Lighthouse | Yachats, OR</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="number">2/3</div>
+            <img src="images/img2.jpg" style="width: 100%" alt="">
+            <div class="caption">Haystack Rock | Oregon Coast</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="number">3/3</div>
+            <img src="images/img3.jpg" style="width: 100%" alt="">
+            <div class="caption">Devil's Punchbowl | Oregon Coast</div>
+        </div>
+
+        <!-- NEXT/PREVIOUS BUTTONS -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- DOTS -->
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+<script src="JS/main.js"></script>
+</body>
+</html>
