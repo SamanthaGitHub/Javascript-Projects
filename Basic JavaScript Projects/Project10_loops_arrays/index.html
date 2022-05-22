@@ -5,15 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops and Arrays</title>
-    <script src="JS/main.js"></script>
+    <script src="JS/main.js" defer></script>
+    <style>
+        body {
+            background-color: rgb(198, 165, 230);
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        button {
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <p id="str_len" onclick="length_function()">Click for the length of: 'Buster is all right.'</p>
+    <h1>Loops and Arrays</h1>
+    <p id="str_len"></p>
+    <button onclick="length_function()">Click for the length of: 'Buster is all right.'</button>
+    <p id="whileLoop"></p>
 
-    <p id="List_of_Instruments"></p>
-    <button onclick="for_loop()">Click here for instruments</button>
+    <p id="forLoop"></p>
+    <button onclick="for_loop()">Keep clicking here for a loop of cat names!</button>
 
     <p id="array"></p>
     <button onclick="arrayFunction()">Click here to display a value of the array.</button>
+
+    <p id="constant"></p>
+    <button onclick="constant_function()">Click here (constant function)</button>
+
+    <p id="usingLet"></p>
+    <button onclick="letFunction()">Click here for let used in the function (3+5)</button>
+
+    <p>Check the console for my return function!</p>
+
+    <p id="userObject"></p>
+
+    <p id ="continueBreak"></p>
 </body>
 </html>
