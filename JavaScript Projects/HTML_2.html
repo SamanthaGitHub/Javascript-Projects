@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <link rel="stylesheet" href="CSS/CSS_1.css">
+    <script src="JavaScript/JavaScript_2.js"></script>
+</head>
+<body>
+    <h2>Submit Form</h2>
+    <h4>Tell us a little about yourself to receive weekly recipes catered to you!</h4>
+    <form name="form" action="" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email address here" required>
+        <br>
+        <label for="allergy">Indicate allergires:</label><br>
+        
+        <input type="checkbox" id="peanuts" name="allergy" value="peanuts">
+        <label for="peanuts">Peanuts</label><br>
+        <input type="checkbox" id="gluten" name="allergy" value="gluten">
+        <label for="gluten">Gluten</label><br>
+        <input type="checkbox" id="shellfish" name="allergy" value="shellfish">
+        <label for="shellfish">Shellfish</label><br><br>
+
+        
+        <input type="radio" id="notRobot" name="security" value="human" required>
+        <label for="notRobot">I am not a bot</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

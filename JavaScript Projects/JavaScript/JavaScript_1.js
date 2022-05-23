@@ -31,3 +31,15 @@ function myFunction() {
     var favFood = document.getElementsByClassName("pasta");
     favFood[0].innerHTML = "My favorite meal ever is pasta!";
 }
+
+var c = document.getElementById("canvas");
+var can = c.getContext("2d");
+
+var grd = can.createLinearGradient(0, 0, 300, 200);
+grd.addColorStop(0, "red");
+grd.addColorStop(0.4, "blue");
+grd.addColorStop(0.7, "white");
+grd.addColorStop(1, "brown");
+
+can.fillStyle = grd;
+can.fillRect(0, 0, 500, 300)
