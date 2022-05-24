@@ -1,0 +1,33 @@
+/* body {
+    background-color: rgb(191, 191, 248);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+h1 {
+    text-align: center;
+}
+
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+td {
+    cursor: pointer;
+    border: 9px solid rgba(252, 3, 231, 0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+}
