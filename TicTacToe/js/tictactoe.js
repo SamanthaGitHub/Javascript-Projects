@@ -21,7 +21,7 @@ function placeXorO(squareNumber) { //function for placing the 'X' or 'O'
             activePlayer = 'X';
         }
 
-        Audio('./media/place.mp3');
+        audio('./media/place.mp3');
 
         if (activePlayer === 'O') { //disables click for the X player while computersTurn; delays 1 second
             disableClick();
@@ -62,7 +62,7 @@ function checkWinConditions() { //includes all possible win conditions and searc
     else if (arrayIncludes('6O', '4O', '2O')) {drawWinLine(100, 508, 510, 90)}
     else if (arrayIncludes('0O', '4O', '8O')) {drawWinLine(100, 100, 520, 520)}
     else if (selectedSquares.length >= 9) {
-        Audio('./media/tie.mp3');
+        audio('./media/tie.mp3');
         setTimeout(function() {resetGame();}, 1000)
     }
 
@@ -80,7 +80,7 @@ function disableClick() { //disables ability for non activePlayer to click
 }
 
 function audio(audioURL) {
-    let audio = new Audio(audioURL);
+    let audio = new audio(audioURL);
     audio.play();
 }
 
