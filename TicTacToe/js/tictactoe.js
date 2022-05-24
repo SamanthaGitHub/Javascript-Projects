@@ -80,7 +80,7 @@ function disableClick() { //disables ability for non activePlayer to click
 }
 
 function audio(audioURL) {
-    let audio = new audio(audioURL);
+    let audio = new Audio(audioURL);
     audio.play();
 }
 
