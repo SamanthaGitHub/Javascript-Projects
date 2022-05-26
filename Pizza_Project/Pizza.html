@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Pizza_JavaScript/Pizza.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="Pizza_CSS/Pizza.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Marck+Script&family=Prompt:wght@500&family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <title>Boujee Pies</title>
+</head>
+<body>
+    <div id="menuBG">
+        <h1><span id="Boujee">Boujee</span> &nbsp;<span>Pies</h1>
+        <input type="button" id="btnOrder" onclick="getReceipt()" value="Place Your Boujee Order">
+        <form id="frmMenu" action="">
+            <div class="menu left">
+                <h3>Size:</h3>
+                <input class="size" type="radio" name="Size" value="Amuse-bouche">Amuse-bouche<br>(bite-sized)<br>
+                <input class="size" type="radio" name="Size" value="Regular">Regular<br>(5 inch diameter)<br>
+                <input class="size" type="radio" name="Size" value="Deluxe">Ultimate Deluxe<br>(8 inch diameter)<br>
+            </div>
+
+            <div class="menu middle">
+                <h3>Vegetables:</h3>
+                <input class="toppings" type="checkbox" name="Topping" value="Morel Mushrooms">Morel Mushrooms<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Truffle Mushrooms">Truffle Mushrooms<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Fresh Pea Shoots">Fresh Pea Shoots<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Squash Flowers">Squash Flowers<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Micro Greens">Micro Greens<br>
+            </div>
+
+            <div class="menu right">
+                <h3>Meats:</h3>
+                <input class="toppings" type="checkbox" name="Topping" value="Filet Mignon">Filet Mignon<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Foie Gras">Foie Gras<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Bone Marrow">Bone Marrow<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Beef Bourguignon">Beef Bourguignon<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Duck Paté">Duck Paté<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Cavi">Caviar<br>
+            </div>
+
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

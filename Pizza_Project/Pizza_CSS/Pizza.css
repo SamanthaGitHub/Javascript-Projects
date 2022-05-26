@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    color: bisque;
+}
+
+#Boujee{
+    font-family: 'Marck Script', cursive;
+    color: orangered;
+    font-size: 60px;
+}
+
+h1 {
+    font-family: 'Lily Script One', cursive;
+    font-size: 40px;
+    color: goldenrod;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Prompt', sans-serif;
+    font-variant: small-caps;
+    color: goldenrod;
+}
+
+div {
+    font-family: 'Prompt', sans-serif;
+    color: bisque;
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.middle {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 115px;
+    width: auto;
+    height: 40px;
+    font-family: 'Prompt', sans-serif;
+    background-color: orangered;
+    color: gold;
+    border-radius: 10px;
+    display: block;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
