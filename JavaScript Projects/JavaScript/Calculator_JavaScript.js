@@ -35,7 +35,7 @@ function Handle_Operator(Next_Operator) {
         const Value_Now = First_Operand || 0;
         let result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
         result = Number(result).toFixed(9) // 9 places after the decimal point
-        result = (result * 1).toString() //removes trailing 0s
+        result = (result * 1).toString() //removes trailing 0's
         Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
     }
