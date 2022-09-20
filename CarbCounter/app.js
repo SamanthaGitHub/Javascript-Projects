@@ -1,5 +1,6 @@
 // Storage Controller
 
+
 // Item Controller
 const ItemCtrl = (function(){
     // Item Constructor
@@ -7,7 +8,7 @@ const ItemCtrl = (function(){
         this.id = id;
         this.name = name;
         this.carbs = carbs;
-    };
+    }
 
     // Data Structure / State
     const data = {
@@ -18,7 +19,7 @@ const ItemCtrl = (function(){
         ],
         currentItem: null,
         totalCarbs: 0
-    };
+    }
 
     //Public methods
     return {
@@ -28,12 +29,17 @@ const ItemCtrl = (function(){
         logData: function(){
             return data;
         }
-    };
+    }
 })();
+
 
 
 // UI Controller
 const UICtrl = (function(){
+    const UISelectors = {
+        itemList: '#item-list',
+        addBtn: '.add-btn'
+    }
 
     // Public Methods
     return {
@@ -43,28 +49,51 @@ const UICtrl = (function(){
             items.forEach(function(item){
                 html += `<li class="collection-item" id="item-${item.id}">
                 <strong>${item.name}: </strong> <em>${item.carbs} Carbs</em>
-                <a href="#" class="secondary-content"><i class="edit-item fa fa-pencil right"></i></a></li>`;
+                <a href="#" class="secondary-content">
+                <i class="edit-item fa fa-pencil right"></i>
+                </a>
+                </li>`;
             });
 
             // Insert list items
-            document.querySelector('#item-list').innerHTML = html;
+            document.querySelector(UISelectors.itemList).innerHTML = html;
+        },
+        getSelectors: function(){
+            return UISelectors;
         }
     }
     
 })();
 
-
 // App Controller
 const App = (function(ItemCtrl, UICtrl){
+    // Load event listeners
+    const loadEventListeners = function(){
+        // Get UI selectors
+        const UISelectors = UICtrl.getSelectors();
 
-    //Public methods
+        // Add item event
+        document.querySelector(UISelectors.addBtn).addEvenListener('click', itemAddSubmit);
+    }
+
+    // Add item submit
+    const itemAddSubmit = function(e){
+
+        console.log('Add');
+        e.preventDefault();
+    }
+
+    // Public methods
     return {
         init: function(){
 
-            // Fetches items frin data structure
+            // Fetches items from data structure
             const items = ItemCtrl.getItems();
-            //Populate list with items
-            UICtrl.populateItemList(items)
+            // Populates list with items
+            UICtrl.populateItemList(items);
+
+            // Load event listeners
+            loadEventListeners();
         }
     }
 
